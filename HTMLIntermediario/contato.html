@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Felipe Verissimo</title>
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>            
+            <li><a href="https://github.com/Felbrou">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/felipe-borges-de-oliveira-verissimo-810b94b7/">Linkedin</a></li>
+        </ul>
+    </div>
+    <img class="rounded-image" src="https://avatars.githubusercontent.com/u/15351171?v=4" alt="Sua Imagem">
+    <h1>Contato</h1>
+    <form class="survey-form" method="post" action="form.php">
+        <div class="form-group">
+            <label id="name-label" for="name">Nome</label>
+            <input id="name" class="form-control" name="name" type="text" placeholder="Digite seu nome" required="" />
+            <label for="last-name">Sobrenome: </label>
+            <input id="last-name" class="form-control" name="last-name" type="text" required=""
+                placeholder="Sobrenome" />
+        </div>
+        <div>
+            <label id="email-label" for="email">Seu melhor e-mail: </label>
+            <input id="email" class="form-control" name="email" type="email" required="" placeholder="E-mail" />
+        </div>
+        <div>
+            <label id="number-label" for="number">Idade: </label>
+            <input id="number" class="form-control" name="age" type="number" min=1 max=2 placeholder="Idade"
+                required="" />
+        </div>
+        <div class="form-group">
+            <p>
+                Precisa de ajuda nessas areas?
+                <span class="clue">(Selecione as opções que desejar)</span>
+            </p>
+
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Projetos Front-end</label>
+            <label>
+                <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Projetos Back-end</label>
+            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Data Visualization</label>
+            <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Desafios</label>
+            <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Comunidade Open Source</label>
+            <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Sala de ajuda</label>
+            <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Videos</label>
+            <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Data Science</label>
+            <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Wiki</label>
+            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Forum</label>
+            <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"
+                    data-form-type="other">Cursos</label>
+        </div>
+        <div class="form-group">
+            <p>Deixe aqui sua mensagem</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Digite aqui sua mensagem..."
+                data-form-type="other"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button" data-form-type="action">
+                Enviar
+            </button>
+        </div>
+    </form>
+    <p>Desenvolvido por Felipe Verissimo</p>
+</body>
+
+</html>
